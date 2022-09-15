@@ -1,0 +1,269 @@
+*{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.main-container{
+  width: 100%;
+  height: 100vh;
+}
+.bg-img img{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    object-fit: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: .6;
+}
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    height: 70px;
+  }
+  ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 30px;
+  }
+  .nav-right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .not-current a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 8px 0;
+    border-bottom: transparent 3px solid;
+    /* border-radius: 3px; */
+    transition: all 0.4s ease-in-out;
+  }
+  .not-current a:hover {
+    /* background-color: #ffbc00; */
+    /* color: white; */
+    border-bottom: 3px tomato solid ;
+    color: tomato;
+  }
+  ul .current a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: tomato; */
+    padding: 8px 0;
+    border-bottom: transparent 3px solid;
+    color: rgb(245, 55, 22) ;
+    border-bottom: 3px rgb(245, 55, 22) solid ;
+    transition: all .4s ease-in-out;
+  }
+  .logo h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+    letter-spacing: 2px;
+  }
+  .logo h3 a{ 
+    color: white;
+  }
+
+.main-body{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  color: white;
+  align-items: center;
+  top: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.main-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  flex-direction: column;
+}
+.main-text{
+  margin-top: 8px;
+}
+.main-cont h2{
+  text-transform: uppercase;
+  font-size: 70px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-cont p{
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.main-link{
+  margin-top: 70px;
+}
+.main-cont a{
+  color: black;
+  font-size: 18px;
+  background-color: white;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+.main-cont a:hover{
+  background-color: tomato;
+  color: white;
+}
+
+/* about page start */
+/* cards start */
+#about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#about h4{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.cards{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 40px;
+}
+.line{
+  background: tomato;
+  width: 250px;
+  height: 3px;
+}
+.cards i{
+  color: tomato;
+}
+.p1{
+  padding: 30px 100px;
+  text-align: center;
+}
+.cards h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.cards p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+  margin-top: 5px;
+  line-height: 25px;
+  font-size: 16px;
+  color: #444;
+}
+.main{
+  width: 80%;
+}
+
+.bot{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bot-ct{
+  width:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bot-ct i{
+  
+  padding-right: 90px;
+}
+.cont-bot h2{ 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 45px;
+}
+.cont-bot p{
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+  line-height: 32px;
+  font-weight: 400;
+}
+/* cards end */
+
+.footer{
+  background-color: rgb(238, 238, 238);
+  margin-top: 10px;
+
+}
+.foot-container{
+   padding: 100px 100px 70px 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 23px;
+}
+.logo h2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.copy{
+   text-align: center;
+   padding-bottom: 30px;
+}
+.copy h3{
+   background: #ccc;
+   margin: 0 100px;
+   padding: 10px;
+   border-radius: 5px;
+}

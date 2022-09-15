@@ -1,0 +1,225 @@
+* {
+    text-decoration: none;
+    color: black;
+  }
+  body{
+      background-color: white;
+      color: black;
+      margin: 0;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: solid rgb(219, 219, 219) 1px;
+  }
+  ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 30px;
+  }
+  .nav-right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .not-current a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 8px 0;
+    border-bottom: transparent 3px solid;
+    transition: all 0.4s ease-in-out;
+  }
+  .not-current a:hover {
+    border-bottom: 3px tomato solid ;
+    color: tomato;
+  }
+  ul .current a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 0;
+    border-bottom: transparent 3px solid;
+    color: rgb(245, 55, 22) ;
+    border-bottom: 3px rgb(245, 55, 22) solid ;
+    transition: all .4s ease-in-out;
+  }
+  .logo h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+    letter-spacing: 2px;
+  }
+  .form-style-5{
+    display: block;
+    margin: 0px auto; 
+    max-width: 200px;
+    padding: 10px;
+  }
+  .form-style-5 input[type="date"]{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(233, 233, 233, 0.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    margin: 0;
+    outline: 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 10px;
+  }
+  .form-style-5 input[type="date"]:focus{
+    background: #d2d9dd;
+  }
+  
+.form-style-5 input[type="submit"], 
+.form-style-5 button {
+  position: relative;
+  display: block;
+  padding: 8px;
+  color: #FFF;
+  margin: 0 auto;
+  background: tomato;
+  font-size: 14px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid tomato;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 button:hover {
+  background: rgb(238, 65, 34);
+}
+
+  h1{
+    font-size: 25px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 20px 0 5px 0;
+  }
+  .line{
+    height: 3px;
+    width: 20rem;
+    background: tomato;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  table{
+    width:100%;
+    table-layout: fixed;
+    margin-top: 50px;
+  }
+  .tbl-header{
+    background-color: rgba(192, 190, 190, 0.3);
+    border-radius: 5px;
+   }
+  .tbl-content{
+    height: 400px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+  }
+  td{
+    padding:5px 15px;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    border-bottom: solid 2px rgba(255,255,255,0.1);
+  }
+  .error {
+    color: red;
+    text-align: center;
+  }
+  section{
+    margin: 0px 50px;
+    overflow-x:hidden;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 6px;
+  } 
+  
+
+  @media screen and (max-width: 600px) {
+    section {
+      margin: 0px 4px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    th {
+      font-size: 11px;
+      padding: 5px 2px;
+    }
+    .form-style-5 input[type="submit"], 
+    .form-style-5 input[type="date"],
+    .form-style-5 button {
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+  .slideInRight {
+    animation-name: slideInRight;
+  } 
+  .slideInDown {
+    animation-name: slideInDown;
+  }
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes slideInDown {
+    from {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
